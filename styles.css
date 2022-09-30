@@ -1,0 +1,139 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    color: #2D3748;
+    font-size: 18px;
+    margin: 0;
+}
+
+header{
+    background-color: #63B3ED;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+header>h1, header>p{
+    color:#FFFFFF
+}
+
+header>img{
+    border-radius: 10rem;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+}
+
+header>h1{
+    font-size: 36px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+main,aside{
+    margin: 0 3rem;
+}
+
+aside{
+    margin-top: 4rem;
+}
+
+.article-title{
+    font-size: 32px;
+    color: #48BB78;
+    margin-bottom: 1rem;
+}
+
+#about,#social-media{
+    margin-bottom: 2rem;
+}
+
+article p{
+    margin-top: 0.5rem;
+}
+
+.article-date-author{
+    color:#718096;
+    margin-bottom: 2rem;
+}
+
+.article-img-1{
+    float: right;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 2rem;
+}
+.article-img-2{
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem 2rem;
+}
+
+
+
+article{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+#social-media>h3, #archives>h3{
+    color:#48BB78;
+    font-family: Georgia,'Times New Roman', Times, serif;
+}
+
+#about >h3{
+    color: #000000;
+    font-family: Georgia,'Times New Roman', Times, serif;
+}
+
+#about{
+    background-color: #E2E8F0;
+    padding: 1rem;
+}
+
+#social-media a, #archives a{
+    color: #4299E1;
+    text-decoration: none;
+}
+
+#social-media li, #archives li{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto auto auto;
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#articles{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+footer{
+    grid-column: 1/-1;
+    grid-row: 3;
+    margin: 0;
+    padding: 2rem;
+}
+
+footer>p{
+    color: #FFFFFF;
+    margin-left: 2rem;
+}
